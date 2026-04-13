@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+joblib
+sentence-transformers
+torch
+plotly
+scikit-learn
+openpyxl
