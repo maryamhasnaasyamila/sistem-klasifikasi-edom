@@ -4,7 +4,7 @@ Aplikasi berbasis **Streamlit** untuk menganalisis sentimen komentar mahasiswa t
 
 ## 🚀 Fitur Utama
 
-- Upload dataset Excel / CSV
+- Upload dataset CSV
 - Pembersihan data komentar
 - Analisis sentimen otomatis
 - Visualisasi distribusi sentimen
