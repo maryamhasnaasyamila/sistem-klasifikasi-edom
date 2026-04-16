@@ -10,6 +10,7 @@ Aplikasi berbasis **Streamlit** untuk menganalisis sentimen komentar mahasiswa t
 - Visualisasi distribusi sentimen
 - Perbandingan model klasifikasi
 - Dashboard interaktif
+- Prediksi sentimen komentar baru
 
 ---
 
@@ -20,6 +21,7 @@ proyek-TA/
 │── app.py
 │── requirements.txt
 │── README.md
+│── notebook-model.ipynb
 │
 ├── datasets/
 │   ├── edom-2024.csv
