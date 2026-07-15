@@ -551,10 +551,15 @@ if menu == "Klasifikasi Sentimen":
 
     # ================= TEXT CLEANING =================
     def clean_text(text):
+        if pd.isna(text):
+            return ""
+
+        text = str(text)
         text = text.lower()
         text = re.sub(r"http\S+|www\.\S+", " ", text)
         text = re.sub(r"[^a-z0-9\s]", " ", text)
         text = re.sub(r"\s+", " ", text)
+
         return text.strip()
 
     # ================= UPLOAD SECTION =================
@@ -593,7 +598,7 @@ if menu == "Klasifikasi Sentimen":
 
         # 1️⃣ CLEANING
         status.text("Membersihkan teks...")
-        df["komentar_clean"] = df["komentar"].astype(str).apply(clean_text)
+        df["komentar_clean"] = df["komentar"].apply(clean_text)
 
         df = df[
             (df["komentar_clean"] != "") &
